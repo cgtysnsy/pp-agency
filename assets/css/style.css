@@ -1,0 +1,269 @@
+/*fixed the bottom images*/
+/*default syle*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*core style */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+.page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/*header style*/ /* top kısmını neden yaslayamadım*/
+header {
+  text-align: center;
+  color: white;
+  min-height: 450px;
+  margin-top: 0;
+}
+.header-image {
+  position: absolute;
+  background-image: url(https://learn.seytech.co/assets/projects/html-css/images/agency/code-screen.png);
+  height: 450px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+header h1 {
+  padding-top: 100px;
+}
+header p {
+  padding: 0 20%;
+}
+.button {
+  display: inline-block;
+  background-color: #333;
+  border: 1px solid white;
+  color: #fff;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: 0.5em 0;
+}
+/* main style*/
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+/*section one */
+.section-one {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  width: 100%;
+  background-color: rgb(234, 234, 234);
+  color: #333;
+}
+.section-one-p {
+  display: flex;
+  flex-direction: row;
+  padding: 0 10%;
+}
+.section-one-p p {
+  padding: 0 10%;
+}
+/*section two*/
+.ection-two {
+  padding: 2em 1em 1em;
+  background-color: #333;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  height: 515px;
+  width: 272px;
+}
+
+.card-content {
+  padding: 1.5em;
+  background-color: #fff;
+}
+
+.card img {
+  max-width: 272px;
+  width: 100%;
+  display: block;
+}
+
+.section-two ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.section-two li {
+  margin-bottom: 1em;
+  background: #333;
+  color: #333;
+  padding: 0.7em;
+}
+/* section two had changed for resizeble and more small images.
+#section-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1%;
+  min-height: 450px;
+  width: 100%;
+  color: #333;
+  background-color: #333;
+  flex-wrap: wrap;
+}
+.web,
+.mobile,
+.tech {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em;
+  max-width: 29%;
+  height: 515px;
+  width: 272px;
+  background-color: #fff;
+}
+.section-two img {
+  max-width: 272px;
+  width: 100%;
+  display: block;
+}
+.section-two h3 {
+  padding-top: 1.5em;
+}
+.sectiontwo-p {
+  padding: 0 1.2rem;
+  height: auto;
+}*/
+/* section three*/
+.section-three {
+  background-color: #fff;
+  color: #333;
+  padding: 2em 0;
+}
+.section-three h2,
+.section-three p {
+  padding: 0 19%;
+}
+/*section four */
+.section-four {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.contact {
+  background-color: rgb(38, 144, 212);
+  width: 50%;
+}
+.about {
+  background-color: #333;
+  width: 50%;
+}
+.section-four h2 {
+  padding: 1.5em;
+}
+.section-four p {
+  padding: 0 1.2em;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  padding-top: 0.8em;
+}
+footer a {
+  color: #2690d4;
+}
+
+@media (max-width: 700px) {
+  footer,
+  .section-four,
+  .section-d,
+  .section-two ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .section .content-text,
+  .content-text p {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card {
+    height: 515px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .card img {
+    max-width: 100%;
+    display: block;
+    margin: 0;
+  }
+  .contact,
+  .about {
+    width: 100%;
+  }
+  footer {
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*
+@media (max-width: 700px) {
+  .section-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+
+    color: #333;
+    background-color: #333;
+  }
+  .web,
+  .mobile,
+  .tech {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+} */
