@@ -98,7 +98,7 @@ main {
   padding: 0 10%;
 }
 /*section two*/
-.ection-two {
+.section-two {
   padding: 2em 1em 1em;
   background-color: #333;
   display: flex;
@@ -123,9 +123,8 @@ main {
 
 .section-two ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
+  padding: 0;
 }
 
 .section-two li {
@@ -134,41 +133,7 @@ main {
   color: #333;
   padding: 0.7em;
 }
-/* section two had changed for resizeble and more small images.
-#section-two {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 1%;
-  min-height: 450px;
-  width: 100%;
-  color: #333;
-  background-color: #333;
-  flex-wrap: wrap;
-}
-.web,
-.mobile,
-.tech {
-  display: flex;
-  flex-direction: column;
-  margin: 0 1em;
-  max-width: 29%;
-  height: 515px;
-  width: 272px;
-  background-color: #fff;
-}
-.section-two img {
-  max-width: 272px;
-  width: 100%;
-  display: block;
-}
-.section-two h3 {
-  padding-top: 1.5em;
-}
-.sectiontwo-p {
-  padding: 0 1.2rem;
-  height: auto;
-}*/
+
 /* section three*/
 .section-three {
   background-color: #fff;
@@ -248,22 +213,3 @@ footer a {
     align-items: center;
   }
 }
-/*
-@media (max-width: 700px) {
-  .section-two {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1%;
-
-    color: #333;
-    background-color: #333;
-  }
-  .web,
-  .mobile,
-  .tech {
-    width: 100%;
-    display: block;
-    margin: 0;
-  }
-} */
